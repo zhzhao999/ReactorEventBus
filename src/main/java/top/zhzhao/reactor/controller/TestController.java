@@ -1,9 +1,9 @@
-package top.zhzhao.reactor.Controller;
+package top.zhzhao.reactor.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.zhzhao.reactor.Service.TestService;
+import top.zhzhao.reactor.service.TestService;
 
 /**
  * @Author zhzhao

@@ -1,4 +1,4 @@
-package top.zhzhao.reactor.EventBus;
+package top.zhzhao.reactor.eventbus;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -6,6 +6,7 @@ import reactor.Environment;
 import reactor.bus.EventBus;
 
 /**
+ * Reactor配置
  * @Author zhzhao
  * @Date 2018/9/23 11:48
  */
@@ -13,8 +14,7 @@ import reactor.bus.EventBus;
 public class EventBusConfig {
     @Bean
     Environment env() {
-        return Environment.initializeIfEmpty()
-                .assignErrorJournal();
+        return Environment.initializeIfEmpty().assignErrorJournal();
     }
 
     @Bean
